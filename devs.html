@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="Style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipe de Devs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <header>
-        <!--- Navbar --->
- <nav class="navbar navbar-expand-lg text-white">
-     <div class="container">
-         <a href="../index.html" target="_blank">
-             <img src="images/R6hub.png" alt="Clique para visitar o site" class="nav-logo">
-         </a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav ms-auto">
-           <li class="nav-item">
-             <a class="nav-link" aria-current="page" href="index.html">Instagram</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="devs.html">Dev's</a>
-           </li>
-         </ul>
-         <form class="d-flex" role="search">
-         </form>
-       </div>
-     </div>
- </nav>
- </header>
-</body>
-</html>
+
+
+<!--- Navbar --->
+<nav class="navbar navbar-expand-lg text-white">
+ <div class="container">
+     <img src="images/R6hub.png" alt="Clique para visitar o site" class="nav-logo">
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav ms-auto">
+       <li class="nav-item">
+         <a class="nav-link" target="_self" href="index.html">home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" target="_self" href="devs.html">Dev's</a>
+       </li>
+     </ul>
+     <form class="d-flex" role="search">
+     </form>
+   </div>
+ </div>
+</nav>
+
+<!-- Sessão de Devs -->
+<section class="container my-5">
+  <div class="row g-4">
+
+<h2 class="text-center mt-4">DESENVOLVEDORES DO SITE:</h2>
+    
+    <!-- Dev 1 -->
+    <div class="caixa1 col-md-4 text-center">
+      <img src="images/Dev.png" alt="Dev 1" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+      <h5>Felipe Chaves</h5>
+      <p>Desenvolvedor FullStack focado em frontend/backend/banco de dados</p>
+      <a href="https://www.linkedin.com/in/felipe-chaves-01294b2aa/" class="button btn btn-sm" target="_blank">LinkedIn</a>
+      <a href="https://github.com/felip0za" class="button2 btn btn-dark btn-sm" target="_blank">GitHub</a>
+    </div>
+    <!-- Dev 2 -->
+    <div class="caixa2 col-md-4 text-center">
+      <img src="images/Dev2.png" alt="Dev 2" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+      <h5>Milton Escossia</h5>
+      <p>Desenvolvedor FullStack focado em frontend/backend/banco de dados</p>
+      <a href="https://www.linkedin.com/in/milton-escossia-barbosa-neto-335a01123/" class="button btn btn-sm" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</section>

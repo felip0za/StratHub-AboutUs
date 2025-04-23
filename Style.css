@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Akira Expanded', sans-serif;
-    background-color: #121212;
+    background-color: #3f3f3fe7;
 }
 
 .nav-link{
@@ -57,4 +57,43 @@ h2, h1{
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+/* Imagem do banner de Devs */
+.nav-dev-logo {
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.caixa1{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    background-color: #1a1a1a;
+    color: white;
+    width: 340px;
+    height: 350px;
+}
+
+.button{
+    background-color: #ff0000;
+    color: white;
+}
+
+.button:hover{
+    background-color: blue;
+    transition: 0.3s;
+}
+
+.button2{
+    background-color: #ff0000;
+    transition: 0.3s;
+}
+
+.caixa2{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    background-color: #1a1a1a;
+    color: white;
+    width: 340px;
+    height: 350px;
+    margin-left: 60px;
 }

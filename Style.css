@@ -2,12 +2,14 @@
 
 
 
-body{
+/* Body */
+body {
     font-family: 'Akira Expanded', sans-serif;
     background-color: #3f3f3fe7;
 }
 
-.nav-link{
+/* Link de navegação */
+.nav-link {
     color: white;
 }
 
@@ -15,48 +17,75 @@ body{
     color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(180, 0, 0);
     transition: 0.3s;
     padding: 6px;
 }
 
-.banner-container{
-    width: 100vw;
-    height: 400px;
-    overflow: hidden;
-}
-
-#banner-header {
+/* Estilos para o banner */
+.banner-container {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 100vh; /* Faz o banner ocupar toda a altura da tela */
+    overflow: hidden; /* Impede o scroll caso a imagem ultrapasse */
+    margin-bottom: 20px; /* Ajuste a distância entre o banner e o texto */
 }
 
-a{
+.banner-container img {
+    width: 100%;
+    height: 100%; /* Controla a altura da imagem */
+    object-fit: cover; /* Faz a imagem cobrir toda a área do container sem distorcer */
+    object-position: center center; /* Centraliza a imagem */
+}
+
+/* Estilos gerais para texto */
+a {
     font-family: 'Akira Expanded', sans-serif;
 }
 
-nav{
+nav {
     background-color: #1a1a1a;
 }
 
-.nav-logo{
+.nav-logo {
     width: 100px;
 }
-h2, h1{
+
+h2, h1 {
     color: rgb(255, 255, 255);
+    margin-top: 60px; /* Distância entre o título e o topo */
 }
 
-.paragrafo{
-    font-size: 20px;
-    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.6);
-    align-items: center;
+/* Parágrafo de descrição */
+.paragrafo {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 20px;
+    padding: 0 20px; /* Adiciona um espaçamento nas laterais */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #121212;
     color: white;
-    padding: 10px;
     text-align: center;
+    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Definindo o layout flex para os parágrafos */
+.paragrafo-container {
+    display: flex; /* Usando o Flexbox para alinhar os elementos */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px; /* Adiciona um pouco de espaço acima */
+}
+
+.p2, .p3, .p4 {
+    background-color: #121212; /* Fundo escuro */
+    color: white;
+    padding: 10px 20px; /* Adiciona algum preenchimento */
+    max-width: 250px; /* Largura máxima para cada parágrafo */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 /* Imagem do banner de Devs */
@@ -66,34 +95,65 @@ h2, h1{
     border-radius: 50%;
 }
 
-.caixa1{
+/* Caixa 1 */
+.caixa1 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
     background-color: #1a1a1a;
     color: white;
     width: 340px;
     height: 350px;
+    margin-bottom: 20px; /* Espaço entre as caixas */
 }
 
-.button{
+/* Botão */
+.button {
     background-color: #ff0000;
     color: white;
 }
 
-.button:hover{
-    background-color: blue;
+.button:hover {
+    background-color: rgb(145, 0, 0);
     transition: 0.3s;
 }
 
-.button2{
+/* Botão 2 */
+.button2 {
     background-color: #ff0000;
     transition: 0.3s;
 }
 
-.caixa2{
+/* Caixa 2 */
+.caixa2 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
     background-color: #1a1a1a;
     color: white;
     width: 340px;
     height: 350px;
     margin-left: 60px;
+    margin-bottom: 20px; /* Espaço entre as caixas */
+}
+
+.imagem{
+    width: 500px;
+    
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .banner-container img {
+        object-position: center top; /* Ajusta a imagem para ficar mais ajustada em telas menores */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho do título principal em telas menores */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título secundário */
+    }
+
+    .paragrafo {
+        font-size: 1rem; /* Reduz o tamanho do parágrafo */
+        padding: 0 10px; /* Ajusta o padding em telas menores */
+    }
 }

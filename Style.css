@@ -85,7 +85,61 @@ h2, h1 {
     color: white;
     padding: 10px 20px; /* Adiciona algum preenchimento */
     max-width: 250px; /* Largura máxima para cada parágrafo */
+    height: 235px;
     text-align: center; /* Alinha o texto ao centro */
+}
+
+.R-logo{
+    display: block;
+    margin: 10px auto 0; /* Centraliza e separa do texto */
+    width: 180px; /* Diminui a largura */
+    height: auto; /* Mantém a proporção */
+}
+
+.SB-logo{
+    display: block;
+    margin: 0px -30px 0; /* Centraliza e separa do texto */
+    width: 280px; /* Diminui a largura */
+    height: auto; /* Mantém a proporção */
+}
+
+.SQL-logo{
+    display: block;
+    margin: 10px auto 0; /* Centraliza e separa do texto */
+    width: 150px; /* Diminui a largura */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilo para cada bloco de texto */
+.b2, .b3, .b4 {
+    background-color: #121212; /* Fundo escuro */
+    color: white;
+    padding: 10px 20px; /* Adiciona algum preenchimento */
+    max-width: 500px; /* Largura máxima para cada parágrafo */
+    height: 280px;
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para as imagens */
+.HB-logo{
+    display: block;
+    margin: 10px auto 0; /* Centraliza e separa do texto */
+    width: 450px; /* Diminui a largura */
+    height: auto; /* Mantém a proporção */
+}
+
+.LP-logo{
+    display: block;
+    margin: 10px auto 0; /* Centraliza e separa do texto */
+    width: 450px; /* Diminui a largura */
+    height: auto; /* Mantém a proporção */
+}
+
+.TB-logo{
+    display: block;
+    margin: 10px auto 0; /* Centraliza e separa do texto */
+    width: 450px; /* Diminui a largura */
+    height: auto; /* Mantém a proporção */
 }
 
 /* Imagem do banner de Devs */

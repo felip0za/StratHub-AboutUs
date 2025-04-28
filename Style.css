@@ -188,9 +188,17 @@ h2, h1 {
 }
 
 .imagem{
-    width: 500px;
-    
+    width: 500px;   
 }
+
+.img2 {
+    padding-top: 50px;
+    width: 1500px;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {

@@ -1,221 +1,207 @@
 @import url('https://fonts.cdnfonts.com/css/akira-expanded');
 
-
-
-/* Body */
+/* === Base === */
 body {
-    font-family: 'Akira Expanded', sans-serif;
-    background-color: #3f3f3fe7;
+  font-family: 'Akira Expanded', sans-serif;
+  background-color: #3f3f3fe7;
+  margin: 0;
+  padding: 0;
 }
 
-/* Link de navegação */
-.nav-link {
-    color: white;
-}
-
-.nav-link:active {
-    color: white;
-}
-
-.nav-link:hover {
-    color: rgb(180, 0, 0);
-    transition: 0.3s;
-    padding: 6px;
-}
-
-/* Estilos para o banner */
-.banner-container {
-    width: 100%;
-    height: 100vh; /* Faz o banner ocupar toda a altura da tela */
-    overflow: hidden; /* Impede o scroll caso a imagem ultrapasse */
-    margin-bottom: 20px; /* Ajuste a distância entre o banner e o texto */
-}
-
-.banner-container img {
-    width: 100%;
-    height: 100%; /* Controla a altura da imagem */
-    object-fit: cover; /* Faz a imagem cobrir toda a área do container sem distorcer */
-    object-position: center center; /* Centraliza a imagem */
-}
-
-/* Estilos gerais para texto */
 a {
-    font-family: 'Akira Expanded', sans-serif;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
+h1, h2 {
+  color: white;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* === Navbar === */
 nav {
-    background-color: #1a1a1a;
+  background-color: #1a1a1a;
+}
+
+.navbar .nav-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(180, 0, 0);
+  padding: 6px;
 }
 
 .nav-logo {
-    width: 200px;
+  width: 180px;
+  height: auto;
 }
 
-h2, h1 {
-    color: rgb(255, 255, 255);
-    margin-top: 60px; /* Distância entre o título e o topo */
+/* === Banner === */
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
-/* Parágrafo de descrição */
+.banner-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* === Parágrafos === */
+.paragrafo, .p2, .p3, .p4, .b2, .b3, .b4 {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.6);
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
 .paragrafo {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #666;
-    margin-top: 20px;
-    padding: 0 20px; /* Adiciona um espaçamento nas laterais */
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #121212;
-    color: white;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.6);
-}
-
-/* Definindo o layout flex para os parágrafos */
-.paragrafo-container {
-    display: flex; /* Usando o Flexbox para alinhar os elementos */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os itens */
-    margin-top: 20px; /* Adiciona um pouco de espaço acima */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
 }
 
 .p2, .p3, .p4 {
-    background-color: #121212; /* Fundo escuro */
-    color: white;
-    padding: 10px 20px; /* Adiciona algum preenchimento */
-    max-width: 250px; /* Largura máxima para cada parágrafo */
-    height: 235px;
-    text-align: center; /* Alinha o texto ao centro */
+  max-width: 250px;
+  height: auto;
 }
 
-.R-logo{
-    display: block;
-    margin: 10px auto 0; /* Centraliza e separa do texto */
-    width: 180px; /* Diminui a largura */
-    height: auto; /* Mantém a proporção */
-}
-
-.SB-logo{
-    display: block;
-    margin: 0px -30px 0; /* Centraliza e separa do texto */
-    width: 280px; /* Diminui a largura */
-    height: auto; /* Mantém a proporção */
-}
-
-.SQL-logo{
-    display: block;
-    margin: 10px auto 0; /* Centraliza e separa do texto */
-    width: 150px; /* Diminui a largura */
-    height: auto; /* Mantém a proporção */
-}
-
-/* Estilo para cada bloco de texto */
 .b2, .b3, .b4 {
-    background-color: #121212; /* Fundo escuro */
-    color: white;
-    padding: 10px 20px; /* Adiciona algum preenchimento */
-    max-width: 500px; /* Largura máxima para cada parágrafo */
-    height: 280px;
-    text-align: center; /* Alinha o texto ao centro */
+  max-width: 500px;
+  height: auto;
 }
 
-/* Estilo para as imagens */
-.HB-logo{
-    display: block;
-    margin: 10px auto 0; /* Centraliza e separa do texto */
-    width: 450px; /* Diminui a largura */
-    height: auto; /* Mantém a proporção */
+.paragrafo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.LP-logo{
-    display: block;
-    margin: 10px auto 0; /* Centraliza e separa do texto */
-    width: 450px; /* Diminui a largura */
-    height: auto; /* Mantém a proporção */
+/* === Imagens === */
+.R-logo, .SB-logo, .SQL-logo,
+.HB-logo, .LP-logo, .TB-logo {
+  display: block;
+  margin: 10px auto 0;
+  max-width: 100%;
+  height: auto;
 }
 
-.TB-logo{
-    display: block;
-    margin: 10px auto 0; /* Centraliza e separa do texto */
-    width: 450px; /* Diminui a largura */
-    height: auto; /* Mantém a proporção */
+.SQL-logo { width: 150px; }
+.SB-logo { width: 280px; }
+.R-logo { width: 180px; }
+.HB-logo, .LP-logo, .TB-logo {
+  width: 100%;
+  max-width: 450px;
 }
 
-/* Imagem do banner de Devs */
+/* === Devs === */
 .nav-dev-logo {
-    max-height: 250px;
-    object-fit: contain;
-    border-radius: 50%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Caixa 1 */
-.caixa1 {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
-    background-color: #1a1a1a;
-    color: white;
-    width: 340px;
-    height: 350px;
-    margin-bottom: 20px; /* Espaço entre as caixas */
+/* === Caixas === */
+.caixa1, .caixa2 {
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 0 auto 20px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
 }
 
-/* Botão */
-.button {
-    background-color: #ff0000;
-    color: white;
-}
-
-.button:hover {
-    background-color: rgb(145, 0, 0);
-    transition: 0.3s;
-}
-
-/* Botão 2 */
-.button2 {
-    background-color: #ff0000;
-    transition: 0.3s;
-}
-
-/* Caixa 2 */
 .caixa2 {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
-    background-color: #1a1a1a;
-    color: white;
-    width: 340px;
-    height: 350px;
-    margin-left: 60px;
-    margin-bottom: 20px; /* Espaço entre as caixas */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.imagem{
-    width: 500px;   
+/* === Botões === */
+.button, .button2 {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.button:hover, .button2:hover {
+  background-color: rgb(145, 0, 0);
+}
+
+/* === Imagem geral === */
+.imagem {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 .img2 {
-    padding-top: 50px;
-    width: 1500px;
-    height: 700px;
-    display: block;
-    margin: 0 auto;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-
-/* Ajustes responsivos */
+/* === Responsividade === */
 @media (max-width: 768px) {
-    .banner-container img {
-        object-position: center top; /* Ajusta a imagem para ficar mais ajustada em telas menores */
-    }
+  .banner-container img {
+    object-position: center top;
+  }
 
-    h1 {
-        font-size: 2rem; /* Reduz o tamanho do título principal em telas menores */
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    h2 {
-        font-size: 1.5rem; /* Reduz o tamanho do título secundário */
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    .paragrafo {
-        font-size: 1rem; /* Reduz o tamanho do parágrafo */
-        padding: 0 10px; /* Ajusta o padding em telas menores */
-    }
+  .paragrafo {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .nav-logo {
+    width: 140px;
+  }
+
+  .HB-logo, .LP-logo, .TB-logo {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .paragrafo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img2 {
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+  }
 }

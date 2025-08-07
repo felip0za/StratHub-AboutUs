@@ -96,6 +96,7 @@ nav {
   margin: 10px auto 0;
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 .SQL-logo { width: 150px; }
@@ -164,6 +165,14 @@ nav {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.rank-logo {
+  display: block;
+  margin: 10px auto;
+  width: 120px;
+  height: auto;
+  object-fit: contain;
 }
 
 /* === Responsividade === */

@@ -216,6 +216,17 @@ nav {
   object-fit: contain;
 }
 
+.paragrafo-container img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.paragrafo-container img.zoomed {
+  transform: scale(2); /* aumenta 2x */
+  z-index: 10;
+  position: relative;
+}
+
 /* === Responsividade === */
 @media (max-width: 768px) {
   .banner-container img {

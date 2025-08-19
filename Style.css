@@ -180,6 +180,7 @@ nav {
   text-align: center;
   padding: 20px 0;
   color: white;
+  margin-top: 258px; /* Isso faz com que o footer vá para o fundo */
 }
 
 .footer-title {

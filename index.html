@@ -1,69 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
-    <link rel="stylesheet" href="Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StratHub - Home</title>
 
-    <!-- Bootstrap Icons CDN -->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  </head>
-    <title>Home</title>
+
+  <!-- Estilos customizados -->
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <header>
-           <!--- Navbar --->
-           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/StratHub.png" alt="Logo" style="height: 40px;">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="telas.html">Sobre o site</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="EliteCup.html">Elite Cup</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="devs.html">Dev's</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <!-- Banner Principal -->
-    <header>
-        <img src="images/Banner.png" alt="R6bg" class="img2"/>
-    </header>
-    <!-- DESCRIÇAO DO PROJETO -->
-    <header>
-      <h1 class="text-center mt-3">o que vai ser?</h1>
-      <p class="paragrafo">Projeto com o intuito de trazer de volta a essencia de campeonatos amadores/oficiais do cenario de rainbow six siege,que durante o ano de 2022 teve seu auge,mas por falta de locais para produzirem os campeonatos,eles ficavam muito desorganizados,entao o Strathub chega para organizar isso,fazendo com que o usuario possa ter a experiencia de tanto jogar campeonatos gratuitos/pagos,como tambem lobbys premium ou FPL(lobby gratuito para high elo)</p>
-    </header>
-
-    <!-- Footer com redes sociais -->
-<footer class="footer">
-  <div class="footer-container">
-    <p class="footer-title">Nos siga nas redes sociais</p>
-    <div class="footer-icons">
-      <a href="https://www.instagram.com/strathub_/" target="_blank">
-        <i class="bi bi-instagram"></i>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/StratHub.png" alt="StratHub Logo" class="logo-navbar">
       </a>
-    </div>
-    <p class="footer-copy">&copy; 2025 StratHub. Todos os direitos reservados.</p>
-  </div>
-</footer>
-        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+          <li class="nav-item"><a class="nav-link" href="telas.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="EliteCup.html">Elite Cup</a></li>
+          <li class="nav-item"><a class="nav-link" href="devs.html">Dev's</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner d-flex align-items-center justify-content-center text-center">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>Bem-vindo ao StratHub</h1>
+      <p>Organizando campeonatos de Rainbow Six Siege com qualidade e profissionalismo.</p>
+    </div>
+  </section>
+
+  <!-- Sobre o Projeto -->
+  <section class="sobre container my-5 text-center">
+    <h2 class="mb-4">O que é o StratHub?</h2>
+    <p class="descricao">
+      Projeto com o intuito de trazer de volta a essência dos campeonatos amadores e oficiais de Rainbow Six Siege.
+      Nosso objetivo é oferecer uma plataforma organizada, com campeonatos pagos e gratuitos, além de lobbys premium e partidas estilo FPL para jogadores de alto nível.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p class="mb-2">Nos siga nas redes sociais</p>
+      <div class="footer-icons mb-2">
+        <a href="https://www.instagram.com/strathub_/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2025 StratHub. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

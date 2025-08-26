@@ -1,11 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 
 /* === Base === */
-body {
-  font-family: 'Akira Expanded', sans-serif;
-  background-color: #3f3f3fe7;
-  margin: 0;
-  padding: 0;
+body, p {
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -14,10 +13,8 @@ a {
   color: inherit;
 }
 
-h1, h2 {
-  color: white;
-  margin-top: 60px;
-  text-align: center;
+h1, h2, h3 {
+  letter-spacing: 1px;
 }
 
 /* === Navbar === */
@@ -28,6 +25,7 @@ nav {
 .navbar .nav-link {
   color: white;
   transition: 0.3s;
+  font-family: 'Akira Expanded', sans-serif;
 }
 
 .navbar .nav-link:hover {
@@ -38,6 +36,21 @@ nav {
 .nav-logo {
   width: 180px;
   height: auto;
+}
+
+/* Logo do menu com efeito ao passar o mouse */
+.logo-navbar {
+  height: 45px;
+  transition: transform 0.3s;
+}
+
+.logo-navbar:hover {
+  transform: scale(1.05);
+}
+
+/* Links do menu ficam vermelhos no hover */
+.navbar .nav-link:hover {
+  color: #ff0000;
 }
 
 /* === Banner === */
@@ -158,12 +171,26 @@ nav {
   margin: 0 auto;
 }
 
-.img2 {
-  padding-top: 50px;
-  width: 100%;
-  max-width: 1500px;
-  height: auto;
-  display: block;
+/* Banner principal com overlay */
+.banner {
+  position: relative;
+  height: 90vh;
+  background: url("images/Banner.png") no-repeat center center/cover;
+}
+
+/* Camada escura sobre a imagem para dar contraste */
+.banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+/* Conteúdo do banner (texto central) */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -181,6 +208,16 @@ nav {
   padding: 20px 0;
   color: white;
   margin-top: 258px; /* Isso faz com que o footer vá para o fundo */
+  font-family: 'Akira Expanded', sans-serif;
+}
+.sobre .descricao {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255,0,0,0.2);
+  max-width: 850px;
+  margin: auto;
+  color: white;
 }
 
 .footer-title {

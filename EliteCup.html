@@ -1,91 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
-    <link rel="stylesheet" href="Style.css">
-
-    <!-- Bootstrap Icons CDN -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EliteCup | StratHub</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <title>EliteCup</title>
+  <link rel="stylesheet" href="Style-eliteCup.css">
 </head>
+
 <body>
-     <header>
-           <!--- Navbar --->
-           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/StratHub.png" alt="Logo" style="height: 40px;">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="telas.html">Sobre o site</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="EliteCup.html">Elite Cup</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="devs.html">Dev's</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <header>
-        <img src="images/EliteCuplogo.png" alt="R6bg" class="img2"/>
-    </header>
-    <!-- DESCRIÇAO DO PROJETO -->
-    <header>
-      <h1 class="text-center mt-3">Como vai funcionar</h1>
-      <p class="paragrafo">Para tornar a competição ainda mais empolgante, adotamos um formato inspirado nos campeonatos de CS e Valorant e criamos a Elite Cup. Os 8 melhores times de cada rank disputarão entre si durante um período determinado. A cada partida vencida, o time conquista 50 pontos, enquanto partidas perdidas ainda garantem 25 pontos — incentivando a regularidade e o esforço constante.
-No entanto, é importante manter o desempenho: posições no ranking podem ser perdidas a qualquer momento caso o time não continue pontuando ao longo da competição. Ao final do período, o time campeão da Elite Cup terá a chance de subir de rank, consolidando sua evolução na hierarquia competitiva.</p>
-    </header>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <!-- Logo com redirecionamento -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/StratHub.png" alt="Logo" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <h1 class="text-center mt-2">Ranks da Elite Cup</h1>
-
-    <div class="paragrafo-container">
-      <p class="b2">Rank Ferro
-            <img src="images/ferro.png" class="rank-logo"> 
-        </p>
-        <p class="b2">Rank Bronze
-            <img src="images/bronze.png" class="rank-logo"> 
-        </p>
-        <p class="b3">Rank Prata
-            <img src="images/prata.png" class="rank-logo"> 
-        </p>
-        <p class="b4">Rank Ouro
-            <img src="images/ouro.png" class="rank-logo">
-        </p>
-        <p class="b4">Rank Platina
-            <img src="images/platina.png" class="rank-logo">
-        </p>
-        <p class="b2">Rank Challenger
-            <img src="images/challenger.png" class="rank-logo"> 
-        </p>
-        <p class="b2">Rank Master
-            <img src="images/master.png" class="rank-logo"> 
-        </p>
-     </div>
-     <!-- Footer com redes sociais -->
-<footer class="footer">
-  <div class="footer-container">
-    <p class="footer-title">Nos siga nas redes sociais</p>
-    <div class="footer-icons">
-      <a href="https://www.instagram.com/strathub_/" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="telas.html">Sobre o site</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="EliteCup.html">Elite Cup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="devs.html">Dev's</a>
+        </li>
+      </ul>
     </div>
-    <p class="footer-copy">&copy; 2025 StratHub. Todos os direitos reservados.</p>
   </div>
-</footer>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</nav>
+
+  <!-- 🏆 Banner Elite Cup -->
+  <section class="text-center mt-4">
+    <img src="images/EliteCuplogo.png" alt="EliteCup Logo" class="img2" style="max-width: 300px;">
+  </section>
+
+  <!-- 📄 Descrição do Projeto -->
+  <section class="container mt-5">
+    <h1 class="text-center mb-3">Como vai funcionar</h1>
+    <p class="paragrafo">
+      Para tornar a competição ainda mais empolgante, adotamos um formato inspirado nos campeonatos de CS e Valorant e criamos a Elite Cup.
+      Os 8 melhores times de cada rank disputarão entre si durante um período determinado.
+      A cada partida vencida, o time conquista 50 pontos, enquanto partidas perdidas ainda garantem 25 pontos — incentivando a regularidade e o esforço constante.<br><br>
+      No entanto, é importante manter o desempenho: posições no ranking podem ser perdidas a qualquer momento caso o time não continue pontuando ao longo da competição.
+      Ao final do período, o time campeão da Elite Cup terá a chance de subir de rank, consolidando sua evolução na hierarquia competitiva.
+    </p>
+  </section>
+
+  <!-- 📊 Ranks -->
+  <section class="container mt-5">
+    <h2 class="text-center mb-4">Ranks da Elite Cup</h2>
+    <div class="paragrafo-container">
+      <p class="b2">Rank Ferro <img src="images/ferro.png" class="rank-logo"></p>
+      <p class="b2">Rank Bronze <img src="images/bronze.png" class="rank-logo"></p>
+      <p class="b3">Rank Prata <img src="images/prata.png" class="rank-logo"></p>
+      <p class="b4">Rank Ouro <img src="images/ouro.png" class="rank-logo"></p>
+      <p class="b4">Rank Platina <img src="images/platina.png" class="rank-logo"></p>
+      <p class="b2">Rank Challenger <img src="images/challenger.png" class="rank-logo"></p>
+      <p class="b2">Rank Master <img src="images/master.png" class="rank-logo"></p>
+    </div>
+  </section>
+
+  <!-- 📱 Footer -->
+  <footer class="footer mt-5">
+    <div class="footer-container">
+      <p class="footer-title">Nos siga nas redes sociais</p>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/strathub_/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2025 StratHub. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

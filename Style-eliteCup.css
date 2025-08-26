@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* === Navbar === */
+nav {
+  background-color: #1a1a1a;
+}
+
+.navbar .nav-link {
+  color: white;
+  transition: 0.3s;
+  font-family: 'Akira Expanded', sans-serif;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(180, 0, 0);
+  padding: 6px;
+}
+
+.nav-logo {
+  width: 180px;
+  height: auto;
+}
+
+/* Logo do menu com efeito ao passar o mouse */
+.logo-navbar {
+  height: 45px;
+  transition: transform 0.3s;
+}
+
+.logo-navbar:hover {
+  transform: scale(1.05);
+}
+
+/* Links do menu ficam vermelhos no hover */
+.navbar .nav-link:hover {
+  color: #ff0000;
+}
+/* === IMAGEM DA TELA === */
+.img2 {
+  display: block;
+  margin: 30px auto 10px;
+  max-width: 320px;
+  height: auto;
+}
+
+/* === PARÁGRAFO EXPLICATIVO === */
+.paragrafo {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 850px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* === RANKS === */
+.paragrafo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.b2, .b3, .b4 {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.6);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 300px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.rank-logo {
+  display: block;
+  margin: 15px auto 0;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Equipe de Devs</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="Style.css">
 
-  <!-- Bootstrap Icons CDN -->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="Style-devs.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <!-- Logo com redirecionamento -->
     <a class="navbar-brand" href="index.html">
-      <img src="images/StratHub.png" alt="Logo" style="height: 40px;">
+      <img src="images/StratHub.png" alt="Logo" class="logo-navbar">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,58 +36,109 @@
           <a class="nav-link" href="EliteCup.html">Elite Cup</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="devs.html">Dev's</a>
+          <a class="nav-link active" href="devs.html">Dev's</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Sessão de Devs -->
+<!-- Sessão de Desenvolvedores -->
 <section class="container my-5">
-  <div class="row g-4">
-    <h2 class="text-center mt-4">DESENVOLVEDORES DO SITE:</h2>
+  <h2 class="text-center mb-4">DESENVOLVEDORES DO SITE:</h2>
+  <div class="row justify-content-center g-4">
 
     <!-- Dev 1 -->
-    <div class="caixa1 col-md-4 text-center">
-      <img src="images/Dev.png" alt="Dev 1" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-      <h5>Felipe Chaves</h5>
-      <p>Desenvolvedor FullStack</p>
-      <a href="https://www.linkedin.com/in/felipe-chaves-01294b2aa/" class="button btn btn-sm" target="_blank">LinkedIn</a>
-      <a href="https://github.com/felip0za" class="button2 btn btn-dark btn-sm" target="_blank">GitHub</a>
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa1">
+        <img src="images/Dev.png" alt="Felipe Chaves">
+        <h5>Felipe Chaves</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/felipe-chaves-01294b2aa/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/felip0za" class="button2" target="_blank">GitHub</a>
+      </div>
     </div>
 
     <!-- Dev 2 -->
-    <div class="caixa2 col-md-4 text-center">
-      <img src="images/Dev2.png" alt="Dev 2" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-      <h5>Milton Escossia</h5>
-      <p>Desenvolvedor FullStack</p>
-      <a href="https://www.linkedin.com/in/milton-escossia-barbosa-neto-335a01123/" class="button btn btn-sm" target="_blank">LinkedIn</a>
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev2.png" alt="Milton Escossia">
+        <h5>Milton Escossia</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/milton-escossia-barbosa-neto-335a01123/" class="button" target="_blank">LinkedIn</a>
+      </div>
     </div>
-  </div>
 
-  <!-- Dev 3 -->
-    <div class="caixa2 col-md-4 text-center">
-      <img src="images/Dev3.png" alt="Dev 3" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-      <h5>Davi Salgueiro</h5>
-      <p>Desenvolvedor FullStack</p>
-      <a href="https://www.linkedin.com/in/davi-salgueiro-8b05ba276/" class="button btn btn-sm" target="_blank">LinkedIn</a>
-      <a href="https://github.com/davisalgs" class="button2 btn btn-dark btn-sm" target="_blank">GitHub</a>
+    <!-- Dev 3 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev3.png" alt="Davi Salgueiro">
+        <h5>Davi Salgueiro</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/davi-salgueiro-8b05ba276/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/davisalgs" class="button2" target="_blank">GitHub</a>
+      </div>
     </div>
-  </div>
 
-  <!-- Dev 4 -->
-    <div class="caixa2 col-md-4 text-center">
-      <img src="images/Dev2.png" alt="Dev 4 " class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-      <h5>Gustavo Fontgalland</h5>
-      <p>Desenvolvedor FullStack</p>
-      <a href="https://www.linkedin.com/in/gustavo-sousa-fontgalland-074b46327/" class="button btn btn-sm" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Lhamasabia2258" class="button2 btn btn-dark btn-sm" target="_blank">GitHub</a>
+    <!-- Dev 4 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev4.png" alt="Erich Schläpfer">
+        <h5>Erich Schläpfer</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/erich-schl%C3%A4pfer-594330299/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/erichs890" class="button2" target="_blank">GitHub</a>
+      </div>
     </div>
+
+    <!-- Dev 5 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev5.png" alt="Luana Cirilo">
+        <h5>Luana Cirilo</h5>
+        <p>Desenvolvedora FullStack</p>
+        <a href="https://www.linkedin.com/in/luanacirilo/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Luanacjq" class="button2" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Dev 6 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev6.png" alt="Gustavo Fontgalland">
+        <h5>Gustavo Fontgalland</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/gustavo-sousa-fontgalland-074b46327/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Lhamasabia2258" class="button2" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Dev 7 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev7.png" alt="Matheus Vasconselos">
+        <h5>Matheus Vasconselos</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/gustavo-sousa-fontgalland-074b46327/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Lhamasabia2258" class="button2" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Dev 8 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="caixa2">
+        <img src="images/Dev8.png" alt="Edinei Xavier">
+        <h5>Edinei Xavier</h5>
+        <p>Desenvolvedor FullStack</p>
+        <a href="https://www.linkedin.com/in/gustavo-sousa-fontgalland-074b46327/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/matheussvml" class="button2" target="_blank">GitHub</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- Footer com redes sociais -->
+<!-- Footer -->
 <footer class="footer">
   <div class="footer-container">
     <p class="footer-title">Nos siga nas redes sociais</p>
@@ -97,6 +151,7 @@
   </div>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,79 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <title>Sobre o site</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-  <link rel="stylesheet" href="Style.css" />
 
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <title>Sobre o site</title>
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="Style-telas.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/StratHub.png" alt="Logo StratHub" class="logo-navbar"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="telas.html">Sobre o site</a></li>
-            <li class="nav-item"><a class="nav-link" href="EliteCup.html">Elite Cup</a></li>
-            <li class="nav-item"><a class="nav-link" href="devs.html">Dev's</a></li>
-          </ul>
-        </div>
+<!-- Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/StratHub.png" alt="Logo StratHub" class="logo-navbar"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="telas.html">Sobre o site</a></li>
+          <li class="nav-item"><a class="nav-link" href="EliteCup.html">Elite Cup</a></li>
+          <li class="nav-item"><a class="nav-link" href="devs.html">Dev's</a></li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <!-- Conteúdo -->
-  <main class="container mt-5 pt-5">
+<!-- Conteúdo Principal -->
+<main class="container mt-5 pt-5">
+  <section class="text-center mb-5">
     <h1>Sobre o site</h1>
-    <h2>Quais linguagens foram usadas:</h2>
-
+    <h2 class="mb-4">Tecnologias utilizadas</h2>
     <div class="paragrafo-container">
-      <p class="p2">Frontend: React <img src="images/React.png" class="R-logo" alt="React" /></p>
-      <p class="p3">Backend: Java Springboot <img src="images/Springboot.png" class="SB-logo" alt="Springboot" /></p>
-      <p class="p4">Banco de dados: PostgreSQL <img src="images/PostgreSQL.png" class="SQL-logo" alt="PostgreSQL" /></p>
+      <article class="card-box">
+        <p>Frontend: React</p>
+        <img src="images/React.png" alt="React" class="card-logo R-logo">
+      </article>
+      <article class="card-box">
+        <p>Backend: Java Spring Boot</p>
+        <img src="images/Springboot.png" alt="Spring Boot" class="card-logo SB-logo">
+      </article>
+      <article class="card-box">
+        <p>Banco de Dados: PostgreSQL</p>
+        <img src="images/PostgreSQL.png" alt="PostgreSQL" class="card-logo SQL-logo">
+      </article>
     </div>
+  </section>
 
-    <h1>Telas do Beta</h1>
+  <section class="text-center">
+    <h1 class="mb-4">Telas do Beta</h1>
     <div class="paragrafo-container">
-      <p class="b2">Tela de Home <img src="images/Home.png" class="HB-logo" alt="Home" /></p>
-      <p class="b3">Tela de Landpage do site <img src="images/landingPage.png" class="LP-logo" alt="Landing Page" /></p>
-      <p class="b4">Tela de Times <img src="images/Times.png" class="TB-logo" alt="Times" /></p>
-      <p class="b2">Tela da Elite Cup <img src="images/EliteCup.png" class="HB-logo" alt="Elite Cup" /></p>
-      <p class="b2">Tela de Usuario <img src="images/Usuario.png" class="HB-logo" alt="Usuario" /></p>
-      <p class="b2">Tela de Amizades e Convites <img src="images/Amigos_Convites.png" class="HB-logo" alt="Amigos e Convites" /></p>
+      <article class="card-box">
+        <p>Home</p>
+        <img src="images/Home.png" alt="Home" class="card-logo HB-logo">
+      </article>
+      <article class="card-box">
+        <p>Landing Page</p>
+        <img src="images/landingPage.png" alt="Landing Page" class="card-logo LP-logo">
+      </article>
+      <article class="card-box">
+        <p>Times</p>
+        <img src="images/Times.png" alt="Times" class="card-logo TB-logo">
+      </article>
+      <article class="card-box">
+        <p>Elite Cup</p>
+        <img src="images/EliteCup.png" alt="Elite Cup" class="card-logo HB-logo">
+      </article>
+      <article class="card-box">
+        <p>Usuário</p>
+        <img src="images/Usuario.png" alt="Usuário" class="card-logo HB-logo">
+      </article>
+      <article class="card-box">
+        <p>Amizades e Convites</p>
+        <img src="images/Amigos_Convites.png" alt="Amigos e Convites" class="card-logo HB-logo">
+      </article>
     </div>
+  </section>
+</main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <p class="footer-title">Nos siga nas redes sociais</p>
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/strathub_/" target="_blank"><i class="bi bi-instagram"></i></a>
-      </div>
-      <p class="footer-copy">&copy; 2025 StratHub. Todos os direitos reservados.</p>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-title">Nos siga nas redes sociais</p>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/strathub_/" target="_blank"><i class="bi bi-instagram"></i></a>
     </div>
-  </footer>
+    <p class="footer-copy">&copy; 2025 StratHub. Todos os direitos reservados.</p>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".paragrafo-container img").click(function () {
-        let src = $(this).attr("src");
-        $("#modalImage").attr("src", src);
-        new bootstrap.Modal(document.getElementById("imageModal")).show();
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".card-logo").click(function () {
+      const src = $(this).attr("src");
+      const modalHTML = `
+        <div class="modal fade" id="imageModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+              <div class="modal-body text-center">
+                <img src="${src}" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+        </div>`;
+      $("body").append(modalHTML);
+      const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+      modal.show();
+      $('#imageModal').on('hidden.bs.modal', function () {
+        $('#imageModal').remove();
       });
     });
-  </script>
+  });
+</script>
 </body>
 </html>

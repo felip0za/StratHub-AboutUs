@@ -129,22 +129,38 @@ nav {
   margin: 0 auto;
 }
 
-/* === Caixas === */
+/* === Caixas de Usuários (ajustado) === */
 .caixa1, .caixa2 {
   background-color: #1a1a1a;
   color: white;
   width: 100%;
-  max-width: 340px;
-  height: auto;
-  margin: 0 auto 20px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
+  max-width: 320px;
+  margin: 0 auto 25px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.25);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.caixa2 {
-  margin-left: auto;
-  margin-right: auto;
+.caixa1:hover, .caixa2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.35);
+}
+
+
+.caixa1 h3, .caixa2 h3 {
+  font-family: 'Akira Expanded', sans-serif;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #ff0000;
+}
+
+.caixa1 p, .caixa2 p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin-top: 8px;
 }
 
 /* === Botões === */

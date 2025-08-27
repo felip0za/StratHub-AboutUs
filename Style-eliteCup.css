@@ -88,3 +88,36 @@ nav {
   height: auto;
   object-fit: contain;
 }
+
+/* === FOOTER === */
+.footer {
+  color: white;
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 80px;
+  font-family: 'Akira Expanded', sans-serif;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #ff0000;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: white;
+}
